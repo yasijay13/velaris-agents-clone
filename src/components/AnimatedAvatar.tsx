@@ -1,6 +1,7 @@
 import type { ExpertAgent } from "../data/experts";
 import WebGLAvatar from "./WebGLAvatar";
 import { COSMIC_CLOUD_FRAGMENT, HELIX_FRAGMENT, SINGULARITY_FRAGMENT } from "../webgl/shaders";
+import { withBase } from "../lib/assetUrl";
 
 const SHADER_SOURCE = {
   "cosmic-cloud": COSMIC_CLOUD_FRAGMENT,
@@ -16,7 +17,7 @@ export default function AnimatedAvatar({ avatar }: { avatar: ExpertAgent["avatar
     >
       {avatar.type === "video" ? (
         <video
-          src={avatar.src}
+          src={withBase(avatar.src)}
           loop
           autoPlay
           muted

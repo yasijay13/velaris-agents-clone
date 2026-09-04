@@ -1,6 +1,7 @@
 import type { PoweredBy } from "../data/agents";
 import WebGLAvatar from "./WebGLAvatar";
 import { COSMIC_CLOUD_FRAGMENT, HELIX_FRAGMENT, SINGULARITY_FRAGMENT } from "../webgl/shaders";
+import { withBase } from "../lib/assetUrl";
 
 const SHADER_SOURCE = {
   "cosmic-cloud": COSMIC_CLOUD_FRAGMENT,
@@ -25,7 +26,7 @@ export default function PoweredByBadge({
       >
         {poweredBy.avatar.type === "video" ? (
           <video
-            src={poweredBy.avatar.src}
+            src={withBase(poweredBy.avatar.src)}
             loop
             autoPlay
             muted
