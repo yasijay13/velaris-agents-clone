@@ -326,7 +326,7 @@ export const expertAgents: ExpertAgent[] = [
     ],
     integrations: ["Salesforce", "Gmail", "Velaris Contracts"],
     category: "Renewals",
-    avatar: { type: "video", src: "/assets/avatar-orbit.webm" },
+    avatar: { type: "video", src: "/assets/avatar-orbit.mp4" },
     added: false,
     outcome: {
       statement: "Drive every renewal to a decision before the renewal date.",
@@ -472,7 +472,7 @@ export const expertAgents: ExpertAgent[] = [
     ],
     integrations: ["Zendesk", "Product analytics", "Slack"],
     category: "Risk",
-    avatar: { type: "video", src: "/assets/avatar-cube.webm" },
+    avatar: { type: "video", src: "/assets/avatar-cube.mp4" },
     added: false,
     outcome: {
       statement: "Identify and mitigate customer risk before it becomes churn.",

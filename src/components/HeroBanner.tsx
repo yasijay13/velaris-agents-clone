@@ -1,3 +1,5 @@
+import { withBase } from "../lib/assetUrl";
+
 export default function HeroBanner() {
   return (
     <div className="relative isolate overflow-hidden rounded-xl border border-border bg-card">
@@ -17,7 +19,7 @@ export default function HeroBanner() {
       </div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-[54%] sm:w-[48%]">
         <video
-          src="/assets/agents-banner.mp4"
+          src={withBase("/assets/agents-banner.mp4")}
           autoPlay
           loop
           muted
