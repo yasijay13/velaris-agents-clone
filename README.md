@@ -1,5 +1,7 @@
 # Velaris Agents — Command Center clone
 
+**Live preview:** https://yasijay13.github.io/velaris-agents-clone/
+
 A pixel-faithful React + TypeScript + Tailwind recreation of the `/agents` page from
 the `velaris-agent-spark` Lovable prototype (Custom and Experts tabs, sidebar rail,
 top nav, hero banner, agent cards, expert cards) — with a custom mascot avatar
